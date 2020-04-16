@@ -26,7 +26,7 @@ end
 
   def list_songs
     song_list = Song.all.sort{|a, b| a.name <=> b.name}.uniq
-    binding.pry
+    #binding.pry
     song_list.each_with_index do |s, i|
       puts "#{i+1}. #{s.artist.name} - #{s.name} - #{s.genre.name}"
     end

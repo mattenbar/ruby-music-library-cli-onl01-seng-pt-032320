@@ -29,4 +29,5 @@ end
     song_list.each_with_index do |s, i|
       puts "#{i+1}. #{s.artist.name} - #{s.name} - #{s.genre.name}"
     end
+  end
 end

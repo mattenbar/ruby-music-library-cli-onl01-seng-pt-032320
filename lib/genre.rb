@@ -27,8 +27,6 @@ class Genre
   end
 
   def artists
-    artists =[]
-    @songs.each {|song| artists << song.artist}
-    artists.uniq
+    songs.collect{ |s| s.artist }.uniq
   end
 end

@@ -26,13 +26,10 @@ class Artist
     Artist.new(name)
   end
 
+
   def add_song(song)
-    unless @songs.include?(song)
-      @songs << song
-    if song.artist == nil
-      song.artist = self
-    end
-    end
+    song.artist = self unless song.artist
+    songs << song unless songs.include?(song)
   end
 
 

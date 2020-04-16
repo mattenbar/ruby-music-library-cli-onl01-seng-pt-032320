@@ -53,7 +53,7 @@ class Song
     genre_name = array[2]
     artist = Artist.find_or_create_by_name(artist_name)
     genre = Genre.find_or_create_by_name(genre_name)
-    new(song_name, artist, genre)
+    self.new(song_name, artist, genre)
   end
 
 

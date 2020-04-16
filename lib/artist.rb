@@ -34,7 +34,9 @@ class Artist
 
 
   def genres
-    songs.collect{ |s| s.genre }.uniq
+    genres = []
+    @songs.each {|song| genres << song.genre}
+    genres.uniq
   end
 
 end

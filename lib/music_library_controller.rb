@@ -24,8 +24,6 @@ end
   end
 
   def list_songs
-    songs = []
-    songs = Songs.all.sort
-    songs = songs.each_with_index {|song, index| puts "#{index+1} #{song.artist.name} - #{song.name} - #{song.genre.name}" }
+  Songs.all.sort.each_with_index {|song, index| puts "#{index+1} #{song.artist.name} - #{song.name} - #{song.genre.name}" }
   end
 end

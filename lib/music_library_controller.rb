@@ -24,7 +24,7 @@ end
   end
 
   def list_songs
-    array = Song.all.sort{|a, b| a.name <=> b.name}
+    array = Song.all.sort
     array.each_with_index do |s, i|
       puts "#{i+1}. #{s.artist.name} - #{s.name} - #{s.genre.name}"
     end

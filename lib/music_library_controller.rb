@@ -26,4 +26,5 @@ end
   def list_songs
     songs = []
     songs = Songs.all.sort
+  end
 end

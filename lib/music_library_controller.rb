@@ -26,20 +26,23 @@ end
 
   def list_songs
     song_list = Song.all.sort{|a, b| a.name <=> b.name}
-    song_list.each_with_index do |s, i|
-      puts "#{i+1}. #{s.artist.name} - #{s.name} - #{s.genre.name}"
+    song_list.each_with_index do |s, index|
+      puts "#{index+1}. #{s.artist.name} - #{s.name} - #{s.genre.name}"
     end
   end
 
   def list_artists
     artist_list = Artist.all.sort{|a, b| a.name <=> b.name}
-    artist_list.each_with_index do |artist, i|
-      puts "#{i+1}. #{artist.name}"
+    artist_list.each_with_index do |artist, index|
+      puts "#{index+1}. #{artist.name}"
     end
   end
 
   def list_genres
     genre_list = Genre.all.sort{|a, b| a.name <=> b.name}
+    genre_list.each_with_index do |genre, index|
+      puts "#{i+1}. #{artist.name}"
+    end
   end
 
 

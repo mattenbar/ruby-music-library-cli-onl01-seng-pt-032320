@@ -1,5 +1,5 @@
 require "pry"
-lass MusicLibraryController
+class MusicLibraryController
 
 def initialize(path = './db/mp3s')
   @path = path

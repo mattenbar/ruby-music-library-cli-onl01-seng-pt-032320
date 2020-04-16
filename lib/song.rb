@@ -27,7 +27,6 @@ class Song
   end
 
   def artist=(artist)
-    if @artist == nil
     @artist = artist
     artist.add_song(self)
     end

@@ -21,6 +21,9 @@ end
     if input != "exit"
       call
     end
-
   end
+
+  def list_songs
+    songs = []
+    songs = Songs.all.sort
 end

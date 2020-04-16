@@ -23,6 +23,7 @@ end
       call
     elsif input = "list songs"
       list_songs
+      call
 
     end
   end

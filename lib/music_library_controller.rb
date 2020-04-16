@@ -37,4 +37,14 @@ end
       puts "#{i+1}. #{artist.name}"
     end
   end
+
+  def list_genres
+    genre_list = Genre.all.sort{|a, b| a.name <=> b.name}
+  end
+
+
+
+
+
+
 end
